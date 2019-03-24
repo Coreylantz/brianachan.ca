@@ -9,6 +9,33 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
  	margin: 0px;
  }
 
+ .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.show-on-focus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: black;
+  color: #fff;
+  opacity: 0;
+  z-index: -1;
+}
+
+.show-on-focus:focus {
+  opacity: 1;
+  z-index: 1000000;
+  padding: 10px;
+}
+
  html {
  	font-size: 20px;
  }

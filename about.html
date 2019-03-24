@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="lang">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +32,7 @@
 	<body>
 		<div class="wrapper">
 			<div class="top">
+				<a class="show-on-focus" href="#main">Skip to main content</a> 
 				<nav>
 				<img alt="" src="images/owl-logo50.png">
 					<ul>
@@ -43,13 +44,15 @@
 					</ul>
 				</nav>
 			</div>
-
-			<section>
-				<img alt="" src="images/briana.jpg">
-				<div class="text">
-					<p>Born in the fabulous year of 1989, Toronto based illustrator working in mobile gaming, print and comics. 1 Part Cyborg, 3 parts owl enthusiast. Super-cool friend to humans and animals. Flawless eyebrows.</p>
-				</div>
-			</section>
+			<main id="main">
+				<h1 class="sr-only">About</h1>
+					<section>
+							<img alt="" src="images/briana.jpg">
+							<div class="text">
+								<p>Born in the fabulous year of 1989, Toronto based illustrator working in mobile gaming, print and comics. 1 Part Cyborg, 3 parts owl enthusiast. Super-cool friend to humans and animals. Flawless eyebrows.</p>
+							</div>
+						</section>
+			</main>
 		</div>
 		<footer>
 			<p>&copy;Briana Chan</p>
